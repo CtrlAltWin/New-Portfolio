@@ -7,7 +7,7 @@ const Home = () => {
         {/* image */}
 
         <div className="justify-center items-center min-h-44 min-w-44 max-h-52 max-w-52 w-[18vw] h-[18vw] rounded-full overflow-clip">
-          <img src="src\assets\coder.jpg" alt="" />
+          <img src="public\coder.jpg" alt="" />
         </div>
         {/* hero-content */}
         <h3 className="font-semibold text-2xl sm:text-[3.5vw] md:text-4xl py-5 md:py-0 md:px-6">
