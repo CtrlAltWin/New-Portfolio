@@ -8,7 +8,7 @@ const Header = () => {
         <Link className="hidden sm:block">About</Link>
         <Link className="hidden sm:block">Projects</Link>
         <Link className="hidden sm:block">Education</Link>
-        <img className="sm:hidden bg-white" src="public/menu-3-line.png"></img>
+        <img className="sm:hidden bg-white" src="/menu-3-line.png"></img>
       </div>
     </div>
   );
