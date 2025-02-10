@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="h-[calc(100%-7.5rem)] py-6">
       <div className="px-3 py-4">
         {/* contact me section ↑ */}
-        <h2 className="font-semibold opacity-70 text-xl sm:text-[3vw] lg:text-3xl text-center">
+        <h2 className="font-semibold text-xl sm:text-[3vw] lg:text-3xl text-center">
           {/* message section ↑ */}
           Here are my contact details and coding profiles. Feel free to connect
           with me!
