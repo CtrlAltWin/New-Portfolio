@@ -14,7 +14,9 @@ const Project = ({ name, description, github, live, techStack, features }) => {
       >
         <div className="flex flex-col sm:flex-row sm:justify-between w-full">
           <span className="font-semibold text-lg">{name}</span>
-          <span className="text-gray-600 text-sm sm:ml-4">{techStack.join(" • ")}</span>
+          <span className="text-gray-600 text-sm sm:ml-4">
+            {techStack.join(" • ")}
+          </span>
         </div>
       </button>
 
@@ -65,10 +67,10 @@ const Projects = () => {
       <h2 className="font-bold text-2xl sm:text-[3vw] lg:text-3xl text-center">
         My Projects
       </h2>
-      <p className="text-gray-600 text-center font-semibold mt-2 mb-4">
+      <p className="text-center text-lg text-gray-700  font-semibold mt-2 mb-4">
         Each project is a step forward in my journey as a developer.
       </p>
-      <p className="text-gray-500 text-center mb-6">
+      <p className="text-gray-600 text-center mb-6">
         Click on a project to see more details.
       </p>
 
@@ -112,12 +114,9 @@ const Projects = () => {
           ]}
         />
       </div>
-      <p className="text-gray-500 text-center p-4">Working on more...</p>
+      <p className="text-gray-600 text-center p-4">Working on more...</p>
     </div>
   );
 };
 
 export default Projects;
-
-
-

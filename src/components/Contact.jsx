@@ -7,7 +7,9 @@ const Contact = () => {
         {/* Heading */}
         <h2 className="font-bold text-2xl sm:text-[3vw] lg:text-3xl">
           Here are my contact details and coding profiles. <br />
-          <span className="text-gray-600">Feel free to connect with me!</span>
+          <span className="text-gray-700 text-lg">
+            Feel free to connect with me!
+          </span>
         </h2>
 
         {/* Subtext */}
@@ -23,13 +25,26 @@ const Contact = () => {
           {/* Contact Icons Strip */}
           <div className="flex justify-center items-center gap-10 py-3 bg-white rounded-lg shadow-sm">
             {[
-              { src: "/gmail.png", alt: "Gmail" },
-              { src: "/linkedin.png", alt: "LinkedIn" },
-              { src: "/github.png", alt: "GitHub" },
+              {
+                src: "/gmail.png",
+                link: "mailto:raunakkumar7245@gmail.com",
+                alt: "Gmail",
+              },
+              {
+                src: "/linkedin.png",
+                link: "https://www.linkedin.com/in/raunak-kumar-065289266/",
+                alt: "LinkedIn",
+              },
+              {
+                src: "/github.png",
+                link: "https://github.com/CtrlAltWin",
+                alt: "GitHub",
+              },
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-50 shadow-md hover:shadow-lg hover:scale-110 rounded-xl transition-all duration-300"
+                onClick={() => window.open(item.link, "_blank")}
+                className="flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-50 shadow-md hover:shadow-lg hover:scale-110 rounded-xl transition-all duration-300 cursor-pointer"
               >
                 <img
                   src={item.src}
@@ -49,12 +64,21 @@ const Contact = () => {
           {/* Coding Profile Icons Strip */}
           <div className="flex justify-center items-center gap-10 py-3 bg-white rounded-lg shadow-sm">
             {[
-              { src: "/leetcode.svg", alt: "LeetCode" },
-              { src: "/codechef.svg", alt: "CodeChef" },
+              {
+                src: "/leetcode.svg",
+                link: "https://leetcode.com/raunak_1611/",
+                alt: "LeetCode",
+              },
+              {
+                src: "/codechef.svg",
+                link: "https://www.codechef.com/users/raunak58",
+                alt: "CodeChef",
+              },
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-50 shadow-md hover:shadow-lg hover:scale-110 rounded-xl transition-all duration-300"
+                onClick={() => window.open(item.link, "_blank")}
+                className="flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-50 shadow-md hover:shadow-lg hover:scale-110 rounded-xl transition-all duration-300 cursor-pointer"
               >
                 <img
                   src={item.src}
