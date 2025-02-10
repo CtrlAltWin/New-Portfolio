@@ -10,13 +10,13 @@ const Home = () => {
           <img src="/coder.jpg" alt="" />
         </div>
         {/* hero-content */}
-        <h3 className="font-semibold opacity-60 text-2xl sm:text-[3vw] lg:text-3xl py-5 md:py-0">
+        <h3 className="font-semibold text-gray-800 text-2xl sm:text-[3vw] lg:text-3xl py-5 md:px-3 md:py-0">
           Turning Ideas Into Reality with
           <span className="text-blue-400"> {"<Code/>"}</span>
         </h3>
       </div>
 
-      <p className="flex font-mono py-5 px-3 text-gray-600 text-xl sm:text-[2.5vw] md:text-2xl">
+      <p className="font-thin px-3 py-5 opacity-60 text-xl sm:text-[3vw] lg:text-3xl">
         Hey, I'm Raunak, a Full-Stack Developer specializing in MERN, C++, and
         Problem Solving. I build scalable web applications, interactive UI, and
         robust backend systems.
