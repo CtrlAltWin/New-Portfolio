@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex flex-col h-[calc(100%-5rem)] py-5">
+    <div className="flex flex-col h-[calc(100%-7.5rem)] py-5">
       <div className="md:flex px-3 items-center">
         {/* image */}
 
@@ -16,7 +16,7 @@ const Home = () => {
         </h3>
       </div>
 
-      <p className="font-thin px-3 py-5 opacity-60 text-xl sm:text-[3vw] lg:text-3xl">
+      <p className="font-thin px-3 py-5 opacity-70 text-xl sm:text-[3vw] lg:text-3xl bg-gray-100">
         Hey, I'm Raunak, a Full-Stack Developer specializing in MERN, C++, and
         Problem Solving. I build scalable web applications, interactive UI, and
         robust backend systems.
