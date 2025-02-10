@@ -79,7 +79,7 @@ const Projects = () => {
           name="Foodie"
           description="A food delivery app frontend built with React using Swiggy's API."
           github="https://github.com/CtrlAltWin/Foodie"
-          live="https://foodie-app.vercel.app"
+          live=""
           techStack={["React", "Tailwind CSS", "Swiggy API"]}
           features={[
             "Real-time menu fetching",
@@ -105,7 +105,7 @@ const Projects = () => {
           name="Portfolio"
           description="My personal portfolio showcasing my work, skills, and coding profiles."
           github="https://github.com/CtrlAltWin/Portfolio"
-          live="https://my-portfolio.vercel.app"
+          live="https://new-portfolio-lyart-sigma.vercel.app/"
           techStack={["React", "Tailwind CSS"]}
           features={[
             "Minimalist responsive design",
