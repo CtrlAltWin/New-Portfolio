@@ -11,25 +11,37 @@ const Header = () => {
           Home
         </Link>
         <Link to={"/project"} className="hidden sm:block">
-          Projects
+          Project
         </Link>
         <Link to={"/contact"} className="hidden sm:block">
-          Contacts
+          Contact
         </Link>
         <details className="sm:hidden z-10">
           <summary className="list-none">
             <img className="mix-blend-multiply" src="/menu-3-line.png"></img>
           </summary>
-          <div className="absolute right-2 bg-gray-600 h-auto w-auto text-white font-semibold p-4 text-[4vmin] rounded-lg">
+          <div className="absolute right-2 bg-gray-50 h-auto w-auto shadow-xl text-black font-semibold text-[2vmin] px-2 rounded-lg m-2">
             <ul className="">
-              <li className="m-2">
-                <Link to={"/"}>Home</Link>
+              <li className="m-2 p-1 rounded-md">
+                <Link to={"/"}>
+                  <h3 className="hover:bg-gray-200 px-3 py-1 rounded-md">
+                    Home
+                  </h3>
+                </Link>
               </li>
-              <li className="m-2">
-                <Link to={"/project"}>Projects</Link>
+              <li className="m-2 p-1 rounded-md">
+                <Link to={"/project"}>
+                  <h3 className="hover:bg-gray-200 px-3 py-1 rounded-md">
+                    Project
+                  </h3>
+                </Link>
               </li>
-              <li className="m-2">
-                <Link to={"/contact"}>Contacts</Link>
+              <li className="m-2 p-1 rounded-md">
+                <Link to={"/contact"}>
+                  <h3 className="hover:bg-gray-200 px-3 py-1 rounded-md">
+                    Contact
+                  </h3>
+                </Link>
               </li>
             </ul>
           </div>
