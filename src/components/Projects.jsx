@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 
-const Project = ({ name, description, github, live, techStack, features }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Project = ({
+  index,
+  name,
+  description,
+  github,
+  live,
+  techStack,
+  features,
+  setOpenIndex,
+  OpenIndex,
+}) => {
   return (
     <div className="bg-white shadow-md rounded-lg">
       {/* Accordion Header */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setOpenIndex(index)}
         className="w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center"
-        aria-expanded={isOpen}
         aria-controls={`project-${name.replace(/\s+/g, "-")}`}
       >
         <div className="flex flex-col sm:flex-row sm:justify-between w-full">
@@ -21,10 +28,10 @@ const Project = ({ name, description, github, live, techStack, features }) => {
       </button>
 
       {/* Accordion Content */}
-      {isOpen && (
+      {OpenIndex == index && (
         <div
           id={`project-${name.replace(/\s+/g, "-")}`}
-          className="bg-gray-50 p-4 border-t"
+          className="bg-gray-100 p-4 border-t"
         >
           <p className="text-gray-700">{description}</p>
 
@@ -62,6 +69,7 @@ const Project = ({ name, description, github, live, techStack, features }) => {
 };
 
 const Projects = () => {
+  const [OpenIndex, setOpenIndex] = useState(1);
   return (
     <div className="flex flex-col h-[calc(100%-7.5rem)] py-8 px-4">
       <h2 className="font-bold text-2xl sm:text-[3vw] lg:text-3xl text-center">
@@ -76,6 +84,7 @@ const Projects = () => {
 
       <div className="w-[80vw] max-w-[600px] mx-auto space-y-4">
         <Project
+          index={1}
           name="Foodie"
           description="A food delivery app frontend built with React using Swiggy's API."
           github="https://github.com/CtrlAltWin/Foodie"
@@ -86,10 +95,13 @@ const Projects = () => {
             "Optimized UI/UX",
             "Search & Filter functionality",
           ]}
+          setOpenIndex={setOpenIndex}
+          OpenIndex={OpenIndex}
         />
 
         <Project
-          name="CodersMedia"
+          index={2}
+          name="Coder'sMedia"
           description="A full-stack MERN app for developers to connect, share profiles, and network."
           github="https://github.com/CtrlAltWin/CodersMedia"
           live=""
@@ -99,12 +111,15 @@ const Projects = () => {
             "Connect with similar interests",
             "Edit profile, send requests",
           ]}
+          setOpenIndex={setOpenIndex}
+          OpenIndex={OpenIndex}
         />
 
         <Project
+          index={3}
           name="Portfolio"
           description="My personal portfolio showcasing my work, skills, and coding profiles."
-          github="https://github.com/CtrlAltWin/Portfolio"
+          github="https://github.com/CtrlAltWin/New-Portfolio"
           live="https://new-portfolio-lyart-sigma.vercel.app/"
           techStack={["React", "Tailwind CSS"]}
           features={[
@@ -112,6 +127,8 @@ const Projects = () => {
             "Contact & project sections",
             "Dynamic animations",
           ]}
+          setOpenIndex={setOpenIndex}
+          OpenIndex={OpenIndex}
         />
       </div>
       <p className="text-gray-600 text-center p-4">Working on more...</p>

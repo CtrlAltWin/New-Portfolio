@@ -21,7 +21,7 @@ const Contact = () => {
       {/* Contact Icons Section */}
       <div className="w-full mt-8 px-4">
         <h3 className="text-xl font-semibold text-center">Contacts</h3>
-        <div className="mt-4 flex flex-col gap-4 px-6 py-5 bg-gray-100 rounded-lg shadow-md max-w-3xl mx-auto">
+        <div className="mt-4 flex flex-col gap-4 px-6 py-4 bg-gray-100 rounded-lg shadow-md max-w-3xl mx-auto">
           {/* Contact Icons Strip */}
           <div className="flex justify-center items-center gap-10 py-3 bg-white rounded-lg shadow-sm">
             {[
@@ -60,7 +60,7 @@ const Contact = () => {
       {/* Coding Profiles Section */}
       <div className="w-full mt-6 px-4">
         <h3 className="text-xl font-semibold text-center">Coding Profiles</h3>
-        <div className="mt-4 flex flex-col gap-4 px-6 py-5 bg-gray-100 rounded-lg shadow-md max-w-lg mx-auto">
+        <div className="mt-4 flex flex-col gap-4 px-6 py-4 bg-gray-100 rounded-lg shadow-md max-w-lg mx-auto">
           {/* Coding Profile Icons Strip */}
           <div className="flex justify-center items-center gap-10 py-3 bg-white rounded-lg shadow-sm">
             {[
