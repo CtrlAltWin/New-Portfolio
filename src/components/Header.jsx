@@ -18,7 +18,7 @@ const Header = () => {
           <summary className="list-none">
             <img className="mix-blend-multiply" src="/menu-3-line.png"></img>
           </summary>
-          <div className="absolute right-2 bg-gray-50 h-auto w-auto shadow-xl text-black font-extralight text-[2.4vmin] rounded-lg m-2 py-1 px-2">
+          <div className="absolute right-2 bg-gray-50 h-auto w-auto shadow-xl text-black font-extralight text-[4vmin] rounded-lg m-2 py-1 px-2">
             <ul className="">
               <li className="">
                 <Link to={"/"}>
