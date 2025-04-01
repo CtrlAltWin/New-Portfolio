@@ -12,11 +12,13 @@ const Project = ({
   OpenIndex,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg">
+    <div className="shadow-md rounded-lg ease-in-out border">
       {/* Accordion Header */}
       <button
-        onClick={() => setOpenIndex(index)}
-        className="w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center"
+        onClick={() =>
+          setOpenIndex((OpenIndex) => (OpenIndex != index ? index : null))
+        }
+        className="w-full text-left p-4 transition-all flex justify-between items-center rounded-full border"
         aria-controls={`project-${name.replace(/\s+/g, "-")}`}
       >
         <div className="flex flex-col sm:flex-row sm:justify-between w-full">
@@ -31,7 +33,7 @@ const Project = ({
       {OpenIndex == index && (
         <div
           id={`project-${name.replace(/\s+/g, "-")}`}
-          className="bg-gray-100 p-4 border-t"
+          className="p-4 ease-in-out"
         >
           <p className="text-gray-700">{description}</p>
 
@@ -69,20 +71,14 @@ const Project = ({
 };
 
 const Projects = () => {
-  const [OpenIndex, setOpenIndex] = useState(1);
+  const [OpenIndex, setOpenIndex] = useState(null);
   return (
-    <div className="flex flex-col h-[calc(100%-7.5rem)] py-8 px-4">
+    <div className="flex flex-col h-[calc(100%-7.5rem)] py-8 text-white">
       <h2 className="font-bold text-2xl sm:text-[3vw] lg:text-3xl text-center">
         My Projects
       </h2>
-      <p className="text-center text-lg text-gray-700  font-semibold mt-2 mb-4">
-        Each project is a step forward in my journey as a developer.
-      </p>
-      <p className="text-gray-600 text-center mb-6">
-        Click on a project to see more details.
-      </p>
 
-      <div className="w-[80vw] max-w-[600px] mx-auto space-y-4">
+      <div className="w-full max-w-[600px] mx-auto space-y-4 mt-8 border border-blue-500">
         <Project
           index={1}
           name="Foodie"
@@ -116,7 +112,38 @@ const Projects = () => {
         />
 
         <Project
-          index={3}
+          index={4}
+          name="YouTube Clone"
+          description="My personal portfolio showcasing my work, skills, and coding profiles."
+          github="https://github.com/CtrlAltWin/New-Portfolio"
+          live="https://new-portfolio-lyart-sigma.vercel.app/"
+          techStack={["React", "Tailwind CSS"]}
+          features={[
+            "Minimalist responsive design",
+            "Contact & project sections",
+            "Dynamic animations",
+          ]}
+          setOpenIndex={setOpenIndex}
+          OpenIndex={OpenIndex}
+        />
+
+        <Project
+          index={5}
+          name="StudySync"
+          description="My personal portfolio showcasing my work, skills, and coding profiles."
+          github="https://github.com/CtrlAltWin/New-Portfolio"
+          live="https://new-portfolio-lyart-sigma.vercel.app/"
+          techStack={["React", "Tailwind CSS"]}
+          features={[
+            "Minimalist responsive design",
+            "Contact & project sections",
+            "Dynamic animations",
+          ]}
+          setOpenIndex={setOpenIndex}
+          OpenIndex={OpenIndex}
+        />
+        <Project
+          index={6}
           name="Portfolio"
           description="My personal portfolio showcasing my work, skills, and coding profiles."
           github="https://github.com/CtrlAltWin/New-Portfolio"
@@ -131,7 +158,7 @@ const Projects = () => {
           OpenIndex={OpenIndex}
         />
       </div>
-      <p className="text-gray-600 text-center p-4">Working on more...</p>
+      <div className="absolute h-40 bottom-0 w-full border"></div>
     </div>
   );
 };

@@ -4,53 +4,95 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center h-[calc(100%-7.5rem)] py-6 px-4">
-      {/* Profile Section */}
-      <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6">
-        {/* Profile Image */}
-        <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden shadow-lg border-4 border-gray-200">
-          <img
-            src="/coder.jpg"
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
+    <div className="flex ">
+      <div className="flex flex-col w-full items-center h-[calc(100vh-12rem) ] py-6 px-4">
+        {/* Profile Section */}
+        <div className="flex flex-col items-center text-center md:text-left gap-6">
+          {/* Profile Image */}
+          <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden shadow-lg">
+            <img
+              src="/coder.jpg"
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Hero Content */}
+          <h3 className="font-semibold text-white text-2xl sm:text-[3vw] lg:text-3xl">
+            Turning Ideas Into Reality with
+            <span className="text-blue-500"> {" <Code/>"}</span>
+          </h3>
         </div>
 
-        {/* Hero Content */}
-        <h3 className="font-semibold text-gray-800 text-2xl sm:text-[3vw] lg:text-3xl">
-          Turning Ideas Into Reality with
-          <span className="text-blue-500"> {" <Code/>"}</span>
-        </h3>
+        {/* Introduction */}
+        <p className="font-light text-white text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10 bg-gray-800">
+          Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
+          Developer specializing in{" "}
+          <span className="font-medium text-blue-500">MERN</span>,
+          <span className="font-medium text-blue-500"> C++</span>, and
+          <span className="font-medium text-blue-500"> Problem Solving</span>. I
+          build scalable web applications, interactive UI, and robust backend
+          systems.
+        </p>
+
+        {/* Call to Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-5 mt-10">
+          <button
+            className="h-12 sm:w-48 px-6 border-2 border-blue-600 bg-gray-800 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white font-medium rounded-lg shadow-md"
+            onClick={() => {
+              navigate("/project");
+            }}
+          >
+            Hire Me
+          </button>
+          <button
+            className="h-12 sm:w-48 px-6 border-2 border-green-600 bg-gray-800 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white font-medium rounded-lg shadow-md"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Know Me
+          </button>
+        </div>
       </div>
 
-      {/* Introduction */}
-      <p className="font-light text-gray-700 text-xl sm:text-[3vw] lg:text-2xl text-center max-w-3xl mt-6 px-4 bg-gray-100 py-4 rounded-lg shadow-md">
-        Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
-        Developer specializing in{" "}
-        <span className="font-medium text-blue-500">MERN</span>,
-        <span className="font-medium text-gray-800"> C++</span>, and Problem
-        Solving. I build scalable web applications, interactive UI, and robust
-        backend systems.
-      </p>
-
-      {/* Call to Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-5 mt-6">
-        <button
-          className="h-12 sm:w-48 px-6 bg-blue-600 hover:bg-blue-700 transition text-white font-medium rounded-lg shadow-md"
-          onClick={() => {
-            navigate("/project");
-          }}
-        >
-          View My Work
-        </button>
-        <button
-          className="h-12 sm:w-48 px-6 bg-green-500 hover:bg-green-600 transition text-white font-medium rounded-lg shadow-md"
-          onClick={() => {
-            navigate("/contact");
-          }}
-        >
-          Let's Connect
-        </button>
+      <div className="hidden w-10 h-[60vh] sm:flex flex-col justify-between px-2 text-blue-500 pt-20">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12.001 9.55005C12.9181 8.61327 14.1121 8 15.501 8C18.5385 8 21.001 10.4624 21.001 13.5V21H19.001V13.5C19.001 11.567 17.434 10 15.501 10C13.568 10 12.001 11.567 12.001 13.5V21H10.001V8.5H12.001V9.55005ZM5.00098 6.5C4.17255 6.5 3.50098 5.82843 3.50098 5C3.50098 4.17157 4.17255 3.5 5.00098 3.5C5.8294 3.5 6.50098 4.17157 6.50098 5C6.50098 5.82843 5.8294 6.5 5.00098 6.5ZM4.00098 8.5H6.00098V21H4.00098V8.5Z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"></path>
+          </svg>
+        </div>
       </div>
     </div>
   );
