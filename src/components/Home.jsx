@@ -5,11 +5,11 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <div className="flex ">
-      <div className="flex flex-col w-full items-center h-[calc(100vh-12rem) ] py-6 px-4">
+      <div className="flex flex-col w-full items-center h-[calc(100vh-12rem)] py-6 px-4">
         {/* Profile Section */}
         <div className="flex flex-col items-center text-center md:text-left gap-6">
           {/* Profile Image */}
-          <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden shadow-lg">
+          <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden">
             <img
               src="/coder.jpg"
               alt="Profile"
@@ -18,14 +18,17 @@ const Home = () => {
           </div>
 
           {/* Hero Content */}
-          <h3 className="font-semibold text-white text-2xl sm:text-[3vw] lg:text-3xl">
+          <h3 className="font-semibold text-white text-2xl sm:text-[3vw] lg:text-3xl bg-gray-800">
             Turning Ideas Into Reality with
-            <span className="text-blue-500"> {" <Code/>"}</span>
+            <span className="text-blue-500 hover:text-4xl duration-200 ease-in">
+              {" "}
+              {" <Code/>"}
+            </span>
           </h3>
         </div>
 
         {/* Introduction */}
-        <p className="font-light text-white text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10 bg-gray-800">
+        <p className="font-light text-gray-400 text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10 bg-gray-800">
           Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
           Developer specializing in{" "}
           <span className="font-medium text-blue-500">MERN</span>,
@@ -38,25 +41,25 @@ const Home = () => {
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 mt-10">
           <button
-            className="h-12 sm:w-48 px-6 border-2 border-blue-600 bg-gray-800 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white font-medium rounded-lg shadow-md"
-            onClick={() => {
-              navigate("/project");
-            }}
+            className="h-12 sm:w-48 px-6 border-2 border-blue-600 bg-gray-800 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white rounded-lg"
+            // onClick={() => {
+            //   navigate("");
+            // }}
           >
             Hire Me
           </button>
           <button
-            className="h-12 sm:w-48 px-6 border-2 border-green-600 bg-gray-800 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white font-medium rounded-lg shadow-md"
-            onClick={() => {
-              navigate("/contact");
-            }}
+            className="h-12 sm:w-48 px-6 border-2 border-green-600 bg-gray-800 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white rounded-lg"
+            // onClick={() => {
+            //   navigate("");
+            // }}
           >
             Know Me
           </button>
         </div>
       </div>
 
-      <div className="hidden w-10 h-[60vh] sm:flex flex-col justify-between px-2 text-blue-500 pt-20">
+      <div className="hidden w-12 h-[calc(100vh-12rem)] sm:flex flex-col justify-between px-3 text-blue-500 py-10 border-l">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import ParticlesComponent from "./components/particles";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 const App = () => {
   return (

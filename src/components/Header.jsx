@@ -6,13 +6,13 @@ const Header = () => {
       <Link className="text-lg sm:text-[2.8vmin]">Portfolio</Link>
       <div className="flex gap-[4vw] text-[2.4vmin] items-center font-extralight">
         <Link
-          to={""}
+          to={"/"}
           className="hidden sm:block hover:text-white ease-in duration-200"
         >
           Home
         </Link>
         <Link
-          to={""}
+          to={"/about"}
           className="hidden sm:block hover:text-white ease-in duration-200"
         >
           About
@@ -29,13 +29,13 @@ const Header = () => {
               <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
             </svg>
           </summary>
-          <div className="absolute right-2 text-white w-auto font-extralight text-[4vmin] py-2 px-2 mt-1 border rounded-2xl">
+          <div className="absolute right-2 text-white w-auto font-extralight text-[4vmin] py-2 px-2 mt-2 border rounded-2xl">
             <ul className="">
               <li className="hover:text-blue-500 duration-200 ease-in-out">
-                <Link to={""}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
-              <li className="hover:text-blue-500 duration-200 ease-in-out">
-                <Link to={""}>About</Link>
+              <li className="hover:text-blue-500 duration-200 ease-in-out mt-2">
+                <Link to={"/about"}>About</Link>
               </li>
             </ul>
           </div>
