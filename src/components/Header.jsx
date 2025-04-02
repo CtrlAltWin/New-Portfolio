@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="h-20 text-blue-500 bg-gray-800 flex justify-between items-center px-8">
+    <div className="h-20 text-white flex justify-between items-center px-8 border-b border-gray-700">
       <Link className="text-lg sm:text-[2.8vmin]">Portfolio</Link>
       <div className="flex gap-[4vw] text-[2.4vmin] items-center font-extralight">
         <Link
@@ -29,12 +29,12 @@ const Header = () => {
               <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
             </svg>
           </summary>
-          <div className="absolute right-2 text-white w-auto font-extralight text-[4vmin] py-2 px-2 mt-2 border rounded-2xl">
+          <div className="absolute right-1 text-white font-thin bg-gray-800 z-10 text-[3.5vmin] rounded mt-2">
             <ul className="">
-              <li className="hover:text-blue-500 duration-200 ease-in-out">
+              <li className="hover:bg-gray-700 duration-200 ease-in-out py-2 px-4 border-b border-gray-500">
                 <Link to={"/"}>Home</Link>
               </li>
-              <li className="hover:text-blue-500 duration-200 ease-in-out mt-2">
+              <li className="hover:bg-gray-700 duration-200 ease-in-out mt-2 py-2 px-4 border-b border-gray-500">
                 <Link to={"/about"}>About</Link>
               </li>
             </ul>

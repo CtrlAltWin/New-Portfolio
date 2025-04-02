@@ -2,15 +2,12 @@ import React from "react";
 import SidebarButtons from "./SidebarButtons";
 const titles = [
   "Projects",
-  "Coding",
-  "Resume",
-  "Experience",
   "Education",
-  "Cetifications",
+  "Resume",
 ];
 const Sidebar = () => {
   return (
-    <div className="absolute sm:static flex flex-col gap-2 h-[80vh] px-2 border-r border-blue-500 bg-gray-800">
+    <div className="flex  border-blue-500 justify-center w-[100vw] overflow-x-scroll hide-scrollbar">
       {titles.map((title) => (
         <SidebarButtons title={title} />
       ))}

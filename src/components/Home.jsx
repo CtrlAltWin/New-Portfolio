@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex ">
-      <div className="flex flex-col w-full items-center h-[calc(100vh-12rem)] py-6 px-4">
+    <div className="flex">
+      <div className="flex flex-col w-full items-center h-[calc(100vh-5.5rem)] py-6 px-4">
         {/* Profile Section */}
         <div className="flex flex-col items-center text-center md:text-left gap-6">
           {/* Profile Image */}
@@ -18,7 +18,7 @@ const Home = () => {
           </div>
 
           {/* Hero Content */}
-          <h3 className="font-semibold text-white text-2xl sm:text-[3vw] lg:text-3xl bg-gray-800">
+          <h3 className="font-semibold text-white text-2xl sm:text-[3vw] lg:text-3xl">
             Turning Ideas Into Reality with
             <span className="text-blue-500 hover:text-4xl duration-200 ease-in">
               {" "}
@@ -26,9 +26,8 @@ const Home = () => {
             </span>
           </h3>
         </div>
-
         {/* Introduction */}
-        <p className="font-light text-gray-400 text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10 bg-gray-800">
+        <p className="font-light text-gray-400 text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10">
           Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
           Developer specializing in{" "}
           <span className="font-medium text-blue-500">MERN</span>,
@@ -37,29 +36,17 @@ const Home = () => {
           build scalable web applications, interactive UI, and robust backend
           systems.
         </p>
-
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 mt-10">
-          <button
-            className="h-12 sm:w-48 px-6 border-2 border-blue-600 bg-gray-800 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white rounded-lg"
-            // onClick={() => {
-            //   navigate("");
-            // }}
-          >
+          <button className="h-12 sm:w-48 px-6 border-2 border-blue-600 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white rounded-lg">
             Hire Me
           </button>
-          <button
-            className="h-12 sm:w-48 px-6 border-2 border-green-600 bg-gray-800 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white rounded-lg"
-            // onClick={() => {
-            //   navigate("");
-            // }}
-          >
+          <button className="h-12 sm:w-48 px-6 border-2 hover:border-green-600 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white rounded-lg">
             Know Me
           </button>
         </div>
       </div>
-
-      <div className="hidden w-12 h-[calc(100vh-12rem)] sm:flex flex-col justify-between px-3 text-blue-500 py-10 border-l">
+      <div className="hidden sm:flex w-12 h-[calc(100vh-5.5rem)] flex-col justify-center gap-8 px-3 text-blue-500 py-10">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
