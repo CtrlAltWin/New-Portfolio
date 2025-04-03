@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="h-20 text-white flex justify-between items-center px-10 border border-gray-700">
+    <div className="h-20 text-white flex justify-between items-center px-10 border-b border-gray-700">
       <Link className="text-lg sm:text-[2.8vmin]">Portfolio</Link>
       <div className="flex gap-[3.5vw] sm:text-[2.7vmin] items-center font-extralight">
         <Link to={"/"} className="hover:text-white ease-in duration-200">
