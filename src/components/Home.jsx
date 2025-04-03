@@ -20,33 +20,26 @@ const Home = () => {
           {/* Hero Content */}
           <h3 className="text-white text-2xl sm:text-[3vw] lg:text-3xl">
             Turning Ideas Into Reality with
-            <span className="text-blue-500 hover:text-4xl duration-200 ease-in">
-              {" "}
-              {" <Code/>"}
-            </span>
+            {" <Code/>"}
           </h3>
         </div>
         {/* Introduction */}
         <p className="font-thin text-gray-400 text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10">
           Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
-          Developer specializing in{" "}
-          <span className="font-medium text-blue-500">MERN</span>,
-          <span className="font-medium text-blue-500"> C++</span>, and
-          <span className="font-medium text-blue-500"> Problem Solving</span>. I
-          build scalable web applications, interactive UI, and robust backend
-          systems.
+          Developer specializing in MERN, C++, and Problem Solving. I build
+          scalable web applications, interactive UI, and robust backend systems.
         </p>
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 mt-10">
-          <button className="h-12 sm:w-48 px-6 border-2 border-blue-600 hover:bg-blue-600 hover:scale-95 duration-200 ease-in text-white rounded-lg">
+          <button className="h-12 sm:w-48 px-6 border-2 border-yellow-600 hover:bg-yellow-600 hover:scale-95 duration-200 ease-in text-white rounded-lg">
             Hire Me
           </button>
-          <button className="h-12 sm:w-48 px-6 border-2 border-gray-500 hover:border-green-600 hover:bg-green-600 hover:scale-95 duration-200 ease-in text-white rounded-lg">
+          <button className="h-12 sm:w-48 px-6 border-2 border-gray-500 hover:bg-gray-500 hover:scale-95 duration-200 ease-in text-white rounded-lg">
             Know Me
           </button>
         </div>
       </div>
-      <div className="hidden sm:flex w-12 h-[calc(100vh-5.5rem)] flex-col justify-center gap-8 px-3 text-gray-500">
+      {/* <div className="hidden sm:flex w-12 h-[calc(100vh-5.5rem)] flex-col justify-center gap-8 px-3 text-gray-500">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +76,7 @@ const Home = () => {
             <path d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"></path>
           </svg>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
