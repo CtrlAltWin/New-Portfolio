@@ -24,8 +24,8 @@ const Home = () => {
           </h3>
         </div>
         {/* Introduction */}
-        <p className="font-thin text-gray-400 text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10">
-          Hey, I'm <span className="font-semibold">Raunak</span>, a Full-Stack
+        <p className="font-thin text-white text-xl md:text-2xl text-center max-w-3xl mt-6 md:mt-10">
+          Hey, I'm Raunak, a Full-Stack
           Developer specializing in MERN, C++, and Problem Solving. I build
           scalable web applications, interactive UI, and robust backend systems.
         </p>

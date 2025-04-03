@@ -71,7 +71,7 @@ const About = () => {
             />
           </div>
           <div className="flex justify-center mt-10">
-            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-gray-600">
+            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white">
               Resume
             </button>
           </div>
@@ -105,7 +105,7 @@ const About = () => {
             />
           </div>
           <div className="flex justify-center mt-10">
-            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-gray-600">
+            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white">
               Github
             </button>
           </div>
