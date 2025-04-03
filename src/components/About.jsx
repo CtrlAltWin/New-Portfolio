@@ -24,7 +24,7 @@ const About = () => {
   return (
     <div className="flex-col text-white mt-6 gap-2">
       <div className="about-section">
-        <div className="experience flex flex-col items-center">
+        <div className="experience flex flex-col items-center px-1">
           <h3 className="text-sm border-gray-600 w-[90vw] py-1 text-center mt-24 font-thin">
             Explore My
           </h3>
@@ -43,7 +43,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="education flex flex-col items-center">
+        <div className="education flex flex-col items-center px-1">
           <h3 className="text-sm border-gray-600 w-[90vw] py-1 text-center mt-40 font-thin">
             My
           </h3>
@@ -71,13 +71,13 @@ const About = () => {
             />
           </div>
           <div className="flex justify-center mt-10">
-            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white">
+            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white shadow-sm shadow-white active:shadow-none">
               Resume
             </button>
           </div>
         </div>
 
-        <div className="Projects flex flex-col items-center border-blue-500">
+        <div className="Projects flex flex-col items-center border-blue-500 px-1">
           <h3 className="text-sm border-gray-600 w-[90vw] py-1 text-center mt-40 font-thin">
             Browse My Recent
           </h3>
@@ -105,7 +105,7 @@ const About = () => {
             />
           </div>
           <div className="flex justify-center mt-10">
-            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white">
+            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white shadow-sm shadow-white active:shadow-none">
               Github
             </button>
           </div>

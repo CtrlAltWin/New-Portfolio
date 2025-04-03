@@ -1,6 +1,7 @@
 const EducationCard = ({ degree, school, year, description }) => {
+  console.log();
   return (
-    <div className="p-8 shadow-sm rounded border text-white border-gray-400">
+    <div className="p-8 text-white shadow shadow-white border-gray-500">
       <h2 className="text-xl">{degree}</h2>
       <h3 className="">{school}</h3>
       <p className="">{year}</p>

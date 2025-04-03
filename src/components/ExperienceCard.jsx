@@ -1,14 +1,18 @@
+import Progressbar from "./Progressbar";
+
 const ExperienceCard = ({ title, techStacks }) => {
   return (
-    <div className="border border-gray-400 p-6 text-white w-full max-w-md rounded-3xl">
+    <div className="p-6 text-white w-full max-w-md rounded-3xl shadow-sm shadow-white">
       <h2 className="text-xl mb-4 text-center">{title}</h2>
-      <ul className="list-disc list-inside space-y-2">
+      <div className="list-disc list-inside space-y-2">
         {techStacks.map((tech, index) => (
-          <li key={index} className="font-thin">
+        
+          <div key={index} className="font-thin flex justify-between items-center">
             {tech}
-          </li>
+            <Progressbar progress={80}/>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
