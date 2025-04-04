@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="flex flex-col w-full items-center px-4 bg-gray-600 min-h-[calc(100vh-5rem)]">
       {/* Profile Section */}
-      <div className="flex flex-col items-center text-center md:text-left gap-6 mt-12">
+      <div className="flex flex-col items-center text-center md:text-left gap-6 mt-10">
         {/* Profile Image */}
         <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden">
           <img
