@@ -23,10 +23,10 @@ const backendTechs = [
 
 const About = () => {
   return (
-    <div className="flex-col text-white pt-6 gap-2 bg-gray-600">
+    <div className="flex-col text-white gap-2 bg-gray-600">
       <div className="about-section">
         <div className="experience flex flex-col items-center px-1">
-          <h3 className="text-sm border-gray-600 w-[90vw] py-1 text-center mt-28 font-thin">
+          <h3 className="text-sm border-gray-600 w-[90vw] py-1 text-center mt-32 font-thin">
             Explore My
           </h3>
           <h3 className="text-4xl border-gray-600 w-[90vw] py-1 text-center font-thin">
@@ -64,8 +64,8 @@ const About = () => {
               description="Studied core subjects including Physics, Chemistry, Mathematics, and Computer Science. Developed a strong foundation in analytical thinking, problem-solving, and logical reasoning, which later helped in software development and programming."
             />
             <EducationCard
-              degree="MS Memorial Public School"
-              school="ABC Senior Secondary School"
+              degree="High School"
+              school="MS Memorial Public School"
               year="2018 - 2019"
               description="Completed foundational education with a focus on Mathematics, Science, and Computer Applications. Developed early interest in technology and programming, participating in various school-level coding competitions and science projects."
             />
@@ -113,14 +113,11 @@ const About = () => {
             />
           </div>
           <div className="flex justify-center mt-10">
-            <button className="py-2 px-4 font-thin rounded-full text-2xl border border-white shadow-sm shadow-white active:shadow-none"  
-            onClick={() =>
-              window.open(
-                "https://github.com/CtrlAltWin",
-                "_blank"
-              )
-            }
-            
+            <button
+              className="py-2 px-4 font-thin rounded-full text-2xl border border-white shadow-sm shadow-white active:shadow-none"
+              onClick={() =>
+                window.open("https://github.com/CtrlAltWin", "_blank")
+              }
             >
               Github
             </button>

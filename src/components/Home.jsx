@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-full items-center py-6 px-4 bg-gray-600 min-h-[calc(100vh-5rem)]">
+    <div className="flex flex-col w-full items-center px-4 bg-gray-600 min-h-[calc(100vh-5rem)]">
       {/* Profile Section */}
-      <div className="flex flex-col items-center text-center md:text-left gap-6">
+      <div className="flex flex-col items-center text-center md:text-left gap-6 mt-12">
         {/* Profile Image */}
         <div className="flex justify-center items-center w-[18vw] h-[18vw] min-w-44 min-h-44 max-w-52 max-h-52 rounded-full overflow-hidden">
           <img
@@ -31,7 +31,7 @@ const Home = () => {
       {/* Call to Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-5 mt-10">
         <button
-          className="h-12 sm:w-48 px-6 border-2 border-yellow-600 bg-yellow-600 hover:scale-95 duration-200 ease-in text-white rounded-lg"
+          className="h-12 sm:w-48 px-6 border-2 border-gray-400 bg-gray-400 hover:scale-95 duration-200 ease-in text-white rounded-lg"
           onClick={() =>
             (window.location.href =
               "mailto:raunakkumar7245@gmail.com?subject=Hiring Inquiry&body=Hi Raunak, I came across your portfolio and would love to discuss a job opportunity with you.")
@@ -40,7 +40,7 @@ const Home = () => {
           Hire Me
         </button>
         <button
-          className="h-12 sm:w-48 px-6 border-2 border-gray-500 hover:bg-gray-500 hover:scale-95 duration-200 ease-in text-white rounded-lg"
+          className="h-12 sm:w-48 px-6 border-2 border-gray-400 hover:bg-gray-400 hover:scale-95 duration-200 ease-in text-white rounded-lg"
           onClick={() => navigate("/about")}
         >
           Know Me

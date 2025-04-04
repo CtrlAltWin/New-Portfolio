@@ -1,6 +1,6 @@
 const ProjectCard = ({ title, stack, year, description }) => {
   return (
-    <div className="p-8 flex flex-col max-w-96 text-white justify-start shadow bg-gray-500 rounded hover:scale-98 duration-200 ease-in-out">
+    <div className="p-8 flex flex-col max-w-96 text-white justify-start shadow border border-white rounded-4xl hover:scale-98 duration-200 ease-in-out">
       <div>
         <h2 className="text-2xl leading-tight">{title}</h2>
         <h3 className="mt-1 text-sm">{stack}</h3>
